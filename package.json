@@ -1,0 +1,11 @@
+{
+  "name": "infinite-play",
+  "version": "1.0.0",
+  "description": "Retro gaming website",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+} 

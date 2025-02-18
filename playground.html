@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground - Jeremy Olken</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="container">
+        <header class="header">
+            <h1 class="glitch" data-text="PLAYGROUND">PLAYGROUND</h1>
+            <p class="subtitle">GAME ON</p>
+        </header>
+        
+        <nav class="retro-menu">
+            <a href="index.html" class="menu-item glow-effect">HOME</a>
+            <a href="playground.html" class="menu-item glow-effect">PLAYGROUND</a>
+            <a href="case-studies.html" class="menu-item glow-effect">CASE STUDIES</a>
+            <a href="media.html" class="menu-item glow-effect">MEDIA</a>
+        </nav>
+
+        <main>
+            <section class="content-section">
+                <div class="games-container">
+                    <div class="game-card">
+                        <h3>iCopter</h3>
+                        <div class="game-preview" id="icopter-container">
+                            <!-- iCopter game will be injected here -->
+                        </div>
+                        <button class="retro-button" onclick="launchGame('icopter')">PLAY</button>
+                        <p class="game-description">Navigate through obstacles in this classic mobile game.</p>
+                    </div>
+                    
+                    <div class="game-card">
+                        <h3>Snake</h3>
+                        <div class="game-preview" id="snake-container">
+                            <!-- Snake game will be injected here -->
+                        </div>
+                        <button class="retro-button" onclick="launchGame('snake')">PLAY</button>
+                        <p class="game-description">The Nokia classic, reimagined for the web.</p>
+                    </div>
+
+                    <div class="game-card coming-soon">
+                        <h3>More Coming Soon</h3>
+                        <div class="game-preview placeholder">
+                            <span class="placeholder-text">?</span>
+                        </div>
+                        <button class="retro-button" disabled>LOCKED</button>
+                        <p class="game-description">More retro games coming soon!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

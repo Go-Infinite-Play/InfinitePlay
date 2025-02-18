@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Jeremy Olken</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="container">
+        <header class="header">
+            <h1 class="glitch" data-text="MEDIA">MEDIA</h1>
+            <p class="subtitle">RECOMMENDED CONTENT</p>
+        </header>
+        
+        <nav class="retro-menu">
+            <a href="index.html" class="menu-item glow-effect">HOME</a>
+            <a href="playground.html" class="menu-item glow-effect">PLAYGROUND</a>
+            <a href="case-studies.html" class="menu-item glow-effect">CASE STUDIES</a>
+            <a href="media.html" class="menu-item glow-effect">MEDIA</a>
+        </nav>
+
+        <main>
+            <section class="content-section">
+                <div class="media-filters">
+                    <button class="filter-button active" data-filter="all">ALL</button>
+                    <button class="filter-button" data-filter="books">BOOKS</button>
+                    <button class="filter-button" data-filter="articles">ARTICLES</button>
+                    <button class="filter-button" data-filter="podcasts">PODCASTS</button>
+                </div>
+
+                <div class="media-grid">
+                    <!-- Example media item - we'll populate this with your content -->
+                    <article class="media-card" data-type="books">
+                        <div class="media-card-content">
+                            <span class="media-type">BOOK</span>
+                            <h2>Title Goes Here</h2>
+                            <p class="media-description">
+                                Brief description of the media item. We'll replace this with your actual recommendations.
+                            </p>
+                            <div class="media-meta">
+                                <span class="media-author">Author Name</span>
+                                <span class="media-date">2024</span>
+                            </div>
+                            <a href="#" class="retro-button">READ MORE</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -3,38 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Play - Retro Gaming Vibes</title>
+    <title>Jeremy Olken</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts: Press Start 2P for retro gaming feel -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Modern font for clean, minimalist design -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="noise-overlay"></div>
     <div class="container">
-        <header class="glitch-container">
-            <h1 class="glitch" data-text="INFINITE PLAY">INFINITE PLAY</h1>
+        <header class="header">
+            <h1>Jeremy Olken</h1>
+            <p class="subtitle">Innovation, Operations & Partnerships</p>
         </header>
         
-        <div class="menu-container">
-            <nav class="retro-menu">
-                <a href="#" class="menu-item glow-effect">START GAME</a>
-                <a href="#" class="menu-item glow-effect">HIGH SCORES</a>
-                <a href="#" class="menu-item glow-effect">OPTIONS</a>
-                <a href="#" class="menu-item glow-effect">CREDITS</a>
-            </nav>
-        </div>
+        <nav class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="playground.html" class="menu-item">Playground</a>
+            <a href="career.html" class="menu-item">Career</a>
+            <a href="media.html" class="menu-item">Media</a>
+        </nav>
 
-        <div class="character">
-            <img src="https://api.iconify.design/game-icons:snowboarder.svg" alt="Snowboarder" class="snowboarder">
-        </div>
+        <main>
+            <section id="about" class="content-section">
+                <div class="about-content">
+                    <div class="text-content">
+                        <p>Welcome! This site offers a glimpse into my mind, where I explore and share insights about business, technology, and life.</p>
+                        
+                        <p>I've spent my career designing and executing strategies that bring innovative products, campaigns, and communities to life for some of the worlds most notable brands. From leading innovation teams at world-class agencies to scaling forward-thinking startups, I've been fortunate to work with incredibly talented people pushing the boundaries on new and emerging technology. I'm currently focused on the implications of AI on how teams collaborate, create, and reimagine their business.</p>
+                        
+                        <p>My long form writing and Friday Letters are posted on my blog, Infinite Play. To get a sense for the media that I consume, you can check out a constantly updated list of valuable articles, books, and podcasts that I recommend.</p>
+                        
+                        <p>You can email me at <a href="mailto:hello@jeremyolken.com">hello@jeremyolken.com</a> or reach me on <a href="https://www.linkedin.com/in/jeremyolken">LinkedIn</a>.</p>
+                    </div>
+                </div>
+            </section>
 
-        <div class="retro-decorations">
-            <div class="grid-lines"></div>
-            <div class="corner top-left"></div>
-            <div class="corner top-right"></div>
-            <div class="corner bottom-left"></div>
-            <div class="corner bottom-right"></div>
-        </div>
+            <section id="clients" class="content-section">
+                <h2>Select Clients</h2>
+                <div class="logo-scroll-container">
+                    <div class="logo-scroll">
+                        <!-- First set of logos -->
+                        <div class="logo-group">
+                            <img src="assets/logos/amazon.png" alt="Amazon" class="client-logo">
+                            <img src="assets/logos/bcg.png" alt="Boston Consulting Group" class="client-logo">
+                            <img src="assets/logos/google.png" alt="Google" class="client-logo">
+                            <img src="assets/logos/cracker-barrel.png" alt="Cracker Barrel" class="client-logo">
+                            <img src="assets/logos/philips.png" alt="Philips" class="client-logo">
+                            <img src="assets/logos/kitchenaid.png" alt="KitchenAid" class="client-logo">
+                            <img src="assets/logos/blue-cross.png" alt="Blue Cross Blue Shield" class="client-logo">
+                            <img src="assets/logos/nestle.png" alt="Nestlé Skin Health" class="client-logo">
+                            <img src="assets/logos/molson-coors.png" alt="Molson Coors" class="client-logo">
+                            <img src="assets/logos/ikonick.png" alt="Ikonick" class="client-logo">
+                            <img src="assets/logos/sparkling-ice.png" alt="Sparkling Ice" class="client-logo">
+                            <img src="assets/logos/gsk.png" alt="GSK" class="client-logo">
+                        </div>
+                        <!-- Duplicate of first set for seamless loop -->
+                        <div class="logo-group">
+                            <img src="assets/logos/amazon.png" alt="Amazon" class="client-logo">
+                            <img src="assets/logos/bcg.png" alt="Boston Consulting Group" class="client-logo">
+                            <img src="assets/logos/google.png" alt="Google" class="client-logo">
+                            <img src="assets/logos/cracker-barrel.png" alt="Cracker Barrel" class="client-logo">
+                            <img src="assets/logos/philips.png" alt="Philips" class="client-logo">
+                            <img src="assets/logos/kitchenaid.png" alt="KitchenAid" class="client-logo">
+                            <img src="assets/logos/blue-cross.png" alt="Blue Cross Blue Shield" class="client-logo">
+                            <img src="assets/logos/nestle.png" alt="Nestlé Skin Health" class="client-logo">
+                            <img src="assets/logos/molson-coors.png" alt="Molson Coors" class="client-logo">
+                            <img src="assets/logos/ikonick.png" alt="Ikonick" class="client-logo">
+                            <img src="assets/logos/sparkling-ice.png" alt="Sparkling Ice" class="client-logo">
+                            <img src="assets/logos/gsk.png" alt="GSK" class="client-logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured" class="content-section">
+                <h2>Featured Game</h2>
+                <div class="game-preview-container">
+                    <div class="game-card featured">
+                        <h3>iCopter</h3>
+                        <div class="game-preview" id="icopter-container">
+                            <!-- iCopter game preview will be injected here -->
+                        </div>
+                        <button class="button" onclick="launchGame('icopter')">Play</button>
+                        <p class="game-note">Visit the Playground for more games</p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
